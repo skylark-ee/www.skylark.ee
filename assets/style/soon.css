@@ -1,0 +1,72 @@
+/* fonts */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/font/opensans-regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url('/assets/font/yanonekaffeesatz-extralight-regular.woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+/* color scheme */
+body {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+a, a:visited, a:hover, a:focus {
+  color: #80ecff;
+}
+a:hover, a:focus {
+  outline: 1px dotted yellow;
+}
+
+
+/* page shape */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  line-height: 200%;
+}
+
+
+/* content formatting */
+header {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 200;
+
+  font-size: 4em; /* fallback */
+  font-size: 15vw;
+}
+
+footer {
+  font-family: 'Open Sans';
+
+  font-size: 1em; /* fallback */
+  font-size: 4vw;
+}
+
+@media (min-width: 640px) {
+  header {
+    font-size: 6em;
+  }
+  footer {
+    font-size: 1.2em;
+  }
+}
